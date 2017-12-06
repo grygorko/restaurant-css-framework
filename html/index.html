@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="./scss/master.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -29,34 +31,87 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="menu.html"><span class="glyphicons glyphicons-option-vertical"></span> Menu</a></li>
-            <li><a href="photos.html"><span class="glyphicons glyphicons-option-vertical"></span> Photos</a></li>
-            <li><a href="restaurants.html"><span class="glyphicons glyphicons-option-vertical"></span> Restaurants</a></li>
-            <li><a href="contact.html"><span class="glyphicons glyphicons-option-vertical"></span>Contact</a></li>
+            <li><a href="#menu"><span class="glyphicons glyphicons-option-vertical"></span> Menu</a></li>
+            <li><a href="#photos"><span class="glyphicons glyphicons-option-vertical"></span> Photos</a></li>
+            <li><a href="#restaurants"><span class="glyphicons glyphicons-option-vertical"></span> Restaurants</a></li>
+            <li><a href="#contact"><span class="glyphicons glyphicons-option-vertical"></span>Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <section class="container">
-    <div class="row-main">
-      <!-- news window -->
-      <div class="col-12 col-md-3">
-        News
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="intro-co">
-          <img src="img/divino-logo.jpg" alt="logo" width="100px" height="auto">
-          <h1>Divino Bar & Restaurant</h1>
-          <p>Italian Restaurants Divino brings western flavour into eastern side of the World </p>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row-main">
+        <!-- news window starts -->
+        <div class="col-12 col-md-3 order-2">
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="col-12 col-md-12">
+              <img src="img/pizza1.jpeg" alt="Promo pizza" width="200px" height="auto">
+            </div>
+            <div class="col-12 col-md-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- news window -->
-      <div class="col-12 col-md-3">
-        News
+        <!-- news window ends -->
+        <div class="col-12 col-md-6 order-1">
+          <div class="intro-co">
+            <img src="img/divino-logo.jpg" alt="logo" width="100px" height="auto">
+            <h1>Divino Bar & Restaurant</h1>
+            <p>Italian Restaurants Divino bring western Flavour into eastern Side</p>
+            <p><a class="btn btn-primary btn-md" href="tel:5555555555" role="button">Book Now</a></p>
+          </div>
+        </div>
+        <!-- event window starts -->
+        <div class="col-12 col-md-3 order-3">
+          <p>Know more from our social media</p>
+          <ul>
+            <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"><i class="fa fa-yelp" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i> </a> </li>
+          </ul>
+        </div>
+        <!-- event window ends -->
       </div>
     </div>
   </section>
+
+  <!-- footer starts  -->
+  <footer>
+    <div class="container">
+      <div class="footer-social">
+        <div class="col-12 col-md-12">
+          <ul>
+            <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"><i class="fa fa-yelp" aria-hidden="true"></i> </a> </li>
+            <li> <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i> </a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-company">
+        <div class="col-12 col-md-12">
+          address
+        </div>
+      </div>
+      <div class="footer-notes">
+        <div class="col-4 col-md-4">
+          Privacy Policy
+        </div>
+        <div class="col-4 col-md-4">
+          Presented by gidzya
+        </div>
+        <div class="col-4 col-md-4">
+          Copyright
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
