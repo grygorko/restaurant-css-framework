@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./img/background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 60%;
+  width: 100vw;
+  height: 100vh;
+  color: white !important;
+}
+
+.navbar-default {
+  background-color: transparent !important;
+  border-color: transparent!important;
+  font-family: Montserrat, sans-serif;
+}
+
+.navbar-default .navbar-nav .active a {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav a:hover {
+  color: white !important;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent !important;
+}
