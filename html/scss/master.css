@@ -6,6 +6,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: white !important;
+  position: relative !important;
 }
 
 .first-page {
@@ -15,19 +16,15 @@ body {
 }
 
 .navbar-default {
-  background-color: transparent !important;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%) !important;
   border-color: transparent!important;
   font-family: Montserrat, sans-serif;
-  margin: 0 2em;
+  /*margin: 0 2em;*/
   padding: 1em 2em;
-  -webkit-transform: scale(1);
-  -webkit-transition: all 1s ease-in-out;
 }
 
 .navbar-default a:hover {
   color: white !important;
-  -webkit-transform: scale(1.2);
-  -webkit-transition: all 1s ease-in-out;
 }
 
 .navbar-default .navbar-nav .active a {
@@ -39,10 +36,6 @@ body {
   border-color: transparent !important;
 }
 
-.navbar-default .navbar-toggle .icon-bar:hover {
-  background-color: white !important;
-}
-
 .navbar-default .navbar-toggle:hover {
   background-color: transparent !important;
 }
@@ -51,17 +44,22 @@ body {
   background-color: transparent !important;
 }
 
-.jumbotron {
-  background: rgba(121, 43, 57, 0.3) !important;
+#home, #menu, #myCarousel, #restaurants, #contact {
+  padding-top: 100px;
 }
 
-.jumbotron .container .row-main .col-md-6 img {
+/*.jumbotron {
+  margin: 0 auto;
+  background: rgba(121, 43, 57, 0.3) !important;
+}*/
+
+.row-main .col-md-6 img {
   border: .2em solid white;
   display: block;
   margin: 0 auto;
 }
 
-.jumbotron .container .row-main .col-md-6 h1, p {
+.row-main .col-md-6 h1, p {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 3em;
@@ -77,31 +75,31 @@ body {
   border-color: #0c0707 !important;
 }
 
-.jumbotron .container .row-main .col-md-3 p {
+.row-main .col-md-3 p {
   font-size: 1em;
   text-align: justify;
   margin: 20px;
   line-height: 2em;
 }
 
-.jumbotron .container .row-main .col-md-3 img {
+.row-main .col-md-3 img {
   border: .2em solid white;
   display: block;
   margin: 0 auto;
 }
 
-.jumbotron .container .row-main .col-md-3 ul {
+.row-main .col-md-3 ul {
   margin: 0;
   padding: 0;
 }
 
-.jumbotron .container .row-main .col-md-3 li {
+.row-main .col-md-3 li {
   list-style: none;
   text-align: center;
   margin: 5px;
 }
 
-.jumbotron .container .row-main .col-md-3 i {
+.row-main .col-md-3 i {
   color: white;
   border: 1px solid white;
   border-radius: 25px;
@@ -137,6 +135,7 @@ body {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   margin: 20px;
+  font-size: 3em;
 }
 
 #myCarousel img {
@@ -178,6 +177,26 @@ body {
 
 .extra-info ul {
   width: 200px;
+}
+
+.container.contact h1 {
+  font-size: 3em;
+  color: #7a343a !important;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 20px;
+}
+
+.container.contact p {
+  font-size: 1em;
+  color: #7a343a !important;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  margin: 20px;
+}
+
+.form-group {
+  color: #7a343a !important;
 }
 
 footer {

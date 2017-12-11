@@ -16,11 +16,10 @@
   <title>Restaurant Divino</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div class="first-page">
-
     <header>
-      <nav class=" navbar navbar-default">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="row-header">
           <!-- button for mobile menu -->
           <div class="navbar-header">
@@ -34,7 +33,7 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">Home</a></li>
+              <li class="active"><a href="#home">Home</a></li>
               <li><a href="#menu"><span class="glyphicons glyphicons-option-vertical"></span> Menu</a></li>
               <li><a href="#myCarousel"><span class="glyphicons glyphicons-option-vertical"></span> Photos</a></li>
               <li><a href="#restaurants"><span class="glyphicons glyphicons-option-vertical"></span> Restaurants</a></li>
@@ -44,19 +43,20 @@
         </div>
       </nav>
     </header>
-    <section class="jumbotron">
-      <div class="container">
+
+    <section id="home" class="container-fluid">
+      <div>
         <div class="row-main">
           <!-- news window starts -->
-          <div class="col-12 col-md-3 order-2">
+          <div class="col-12 col-md-3">
             <div class="row">
-              <div class="col-6 offset-2 col-md-12">
+              <div class="col-6 col-md-12 text-center">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
               <div class="col-12 col-md-12">
                 <img src="img/pizza1.jpeg" alt="Promo pizza" width="200px" height="auto">
               </div>
-              <div class="col-6 offset-2 col-md-12">
+              <div class="col-6 col-md-12">
                 <p> <strong>Promo</strong> </p>
               </div>
             </div>
@@ -245,8 +245,8 @@
       </div>
     </div>
   </section>
-  <section class="restos">
-    <!-- here starts the map and address -->
+  <!-- here starts the map and address -->
+  <section id="restaurants" class="restos">
     <div class="info row">
       <h1>Restaurants</h1>
       <div class="map col-12 col-md-6">
@@ -287,10 +287,39 @@
     </div>
   </section>
   <!-- here ends the map:address:working hours -->
-  <section class="contact">
-    <div class="">
-
-    </div>
+  <section id="contact" class="container contact">
+    <h1>Contact us</h1>
+    <p>For any additional info or reservations, please fill up the form below.</p>
+    <form>
+      <div class="form-row align-items-center">
+        <div class="form-group col-12 col-md-3">
+          <label for="First Name">First Name:</label>
+          <input type="text" class="form-control" placeholder="Enter your First name">
+        </div>
+        <div class="form-group col-12 col-md-3">
+          <label for="Second Name">Second Name:</label>
+          <input type="text" class="form-control" placeholder="Enter your Second Name">
+        </div>
+        <div class="form-group col-12 col-md-3">
+          <label for="Email">Email address:</label>
+          <input type="text" class="form-control" placeholder="Enter your Email address">
+        </div>
+        <div class="form-group col-12 col-md-3">
+          <label for="subject" class="control-label">Subject:</label>
+          <select class="form-control" id="subject">
+              <option>Reservation</option>
+              <option>Event</option>
+            </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-12 col-md-6">
+          <label for="comment">Comment:</label>
+          <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default pull-right">Submit</button>
+      </div>
+    </form>
   </section>
   <!-- footer starts  -->
   <footer>
