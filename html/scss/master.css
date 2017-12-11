@@ -72,6 +72,11 @@ body {
   border-color: #0c0707 !important;
 }
 
+.btn-primary:hover {
+  background-color: #7a343a !important;
+  border-color: #0c0707 !important;
+}
+
 .jumbotron .container .row-main .col-md-3 p {
   font-size: 1em;
   text-align: justify;
@@ -113,7 +118,7 @@ body {
 }
 
 .menu p {
-  font-family: 'Raleway', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 2em;
   color: black;
 }
@@ -140,6 +145,39 @@ body {
   height: 100vh;
   max-width: 100%;
   /*make mediaquiery*/
+}
+
+.restos {
+  background-color: #7a343a;
+  width: 100vw;
+  height: auto;
+  padding: 0 auto;
+}
+
+.restos h1 {
+  font-size: 3em;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 20px;
+}
+
+.restos h4 {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  margin: 20px;
+}
+
+.restos p {
+  font-size: 1em;
+  text-align: justify;
+  font-family: Montserrat, sans-serif;
+  margin: 20px;
+  width: 150px;
+}
+
+.extra-info ul {
+  width: 200px;
 }
 
 footer {
