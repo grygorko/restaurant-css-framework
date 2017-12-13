@@ -53,10 +53,18 @@ body {
   height: auto;
 }
 
-.row-main .col-md-6 h1, p {
+.row-main .col-md-6 h1 {
+  text-align: center;
+  font-family: 'Damion', cursive;
+  font-size: 3em;
+}
+
+.row-main .col-md-6 p {
+  color: white;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 3em;
+  font-size: 1.5em;
+  text-shadow: 0px .5px 1px grey;
 }
 
 .btn-primary {
@@ -108,13 +116,14 @@ body {
 
 .menu h1 {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Damion', cursive;
   font-size: 3em;
   color: #7a343a;
   text-transform: uppercase;
 }
 
 .menu p {
+  text-align: center;
   font-family: Montserrat, sans-serif;
   font-size: 2em;
   color: black;
@@ -130,10 +139,14 @@ body {
   border: transparent !important;
 }
 
+.badge {
+  background-color: transparent !important;
+}
+
 #myCarousel h1 {
   color: #7a343a !important;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Damion', cursive;
   margin: 20px;
   font-size: 3em;
   text-transform: uppercase;
@@ -160,9 +173,9 @@ body {
 .restos h1 {
   font-size: 3em;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Damion', cursive;
   text-transform: uppercase;
-  margin: 20px;
+  margin-bottom: 50px;
 }
 
 .restos h4 {
@@ -180,15 +193,21 @@ body {
   width: 200px;
 }
 
-/*.restos .info.row {
+/*.restos .extra-info.row {
   background-color: rgba(56, 43, 45, 0.5);
   margin: 0 100px;
   padding-bottom: 40px;
 }*/
 
+.restos .info.row a {
+  color: white;
+  text-transform: uppercase;
+}
+
 .restos .info.row .map iframe {
   display: block;
   margin: 0 auto;
+  border: 1px solid white;
 }
 
 .extra-info ul {
@@ -201,7 +220,7 @@ body {
   font-size: 3em;
   color: #7a343a !important;
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Damion', cursive;
   margin: 20px;
   text-transform: uppercase;
 }
@@ -232,18 +251,13 @@ body {
 .container.contact form .container button {
   background-color: #7a343a !important;
   padding: 2px 20px 2px 60px;
-  margin: 25px 200px 0 0;
-}
-
-.container.contact form .container {
-  margin: 20px auto;
-  padding: 0;
+  margin: 25px 110px 25px 0;
 }
 
 .form-group {
   color: #7a343a !important;
   min-width: 200px;
-  max-width: 400px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -283,4 +297,36 @@ footer .col-md-4 p {
   margin: 0 auto;
   text-align: center;
   font-size: .8em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .row-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .jumbotron.col-12.col-md-6 {
+    order: 1;
+  }
+  .promo.col-12.col-md-3 {
+    order: 2;
+  }
+  .social.col-12.col-md-3 {
+    order: 3;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  #myCarousel img {
+    height: 100vh;
+  }
+  .container.contact form .container {
+    margin: 0px auto;
+    width: 600px;
+    padding-bottom: 50px;
+  }
+  .restos .info.row, .extra-info.row {
+    width: 800px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
 }
