@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <!-- pour les titres -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- pour les subtitres -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- pour les text a lire -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,7 +20,7 @@
   <title>Restaurant Divino</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
   <div class="first-page">
     <header>
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -35,11 +37,11 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#menu"><span class="glyphicons glyphicons-option-vertical"></span> Menu</a></li>
-              <li><a href="#myCarousel"><span class="glyphicons glyphicons-option-vertical"></span> Photos</a></li>
-              <li><a href="#restaurants"><span class="glyphicons glyphicons-option-vertical"></span> Restaurants</a></li>
-              <li><a href="#contact"><span class="glyphicons glyphicons-option-vertical"></span>Contact</a></li>
+              <li class="active"> <a href="index.html">Home</a></li>
+              <li><a href="menu.html"> Menu</a></li>
+              <li><a href="photos.html">Photos</a></li>
+              <li><a href="restaurants.html">Restaurants</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -52,7 +54,7 @@
           <!-- news window starts -->
           <div class="promo col-12 col-md-3">
             <p><strong>Special of the day</strong></p>
-            <p> Everyday our pasta & pizza masters cook with pride, pasion and fresh ingredients to create best experience for you at our restaurant. </p>
+            <p> Everyday our pasta & pizza's masters cook with pride and passion to create best experience for you at our restaurant. Try our delicious 4 cheesse pizza with San Daniele Ham and arugula on top. </p>
             <img src="img/pizza1.jpeg" alt="Promo pizza">
           </div>
           <!-- news window ends -->
@@ -61,7 +63,7 @@
               <img src="img/divino-logo.jpg" alt="logo">
               <h1>Divino Bar & Restaurant</h1>
               <p>Italian Restaurants Divino bring western Flavour into eastern Side, where you receive high standarts service in elegant and relaxing atmosphere </p>
-              <p><a class="btn btn-primary btn-md" href="tel:5555555555" role="button">Book Now</a></p>
+              <p><a class="btn btn-primary btn-md" href="contact.html" role="button">Book Now</a></p>
             </div>
           </div>
           <!-- event window starts -->
@@ -78,284 +80,7 @@
       </div>
     </section>
   </div>
-  <!-- menu window -->
-  <section>
-    <div class="row">
-      <div id="menu" class="col-12 col-md-12 menu">
-        <h1>Menu</h1>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-4 menu">
-        <p>Pizzas</p>
-        <ul class="list-group">
-          <li class="list-group-item justify-content-around">
-            Vegetarian pizza
-            <span class="badge badge-default badge-pill">5¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Pizza Meat Lover
-            <span class="badge badge-default badge-pill">6¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Salmon Pizza
-            <span class="badge badge-default badge-pill">2¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Marinara Pizza
-            <span class="badge badge-default badge-pill">5¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Margherita Pizza
-            <span class="badge badge-default badge-pill">6¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Four Cheese Pizza
-            <span class="badge badge-default badge-pill">2¥</span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4 menu">
-        <p>Main</p>
-        <ul class="list-group">
-          <li class="list-group-item justify-content-around">
-            Pasta Carbonara
-            <span class="badge badge-default badge-pill">5¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Pasta Arrabiata
-            <span class="badge badge-default badge-pill">4¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Roasted chicken & vegetables
-            <span class="badge badge-default badge-pill">2¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Australian Steak Tenderloin
-            <span class="badge badge-default badge-pill">5¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Fish & Seafood Pasta
-            <span class="badge badge-default badge-pill">4¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Pesto Pasta
-            <span class="badge badge-default badge-pill">2¥</span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-4 menu">
-        <p>Drinks</p>
-        <ul class="list-group">
-          <li class="list-group-item justify-content-around">
-            Soft drinks
-            <span class="badge badge-default badge-pill">14¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Beer
-            <span class="badge badge-default badge-pill">12¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Wine
-            <span class="badge badge-default badge-pill">20¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Tea
-            <span class="badge badge-default badge-pill">14¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Coffee
-            <span class="badge badge-default badge-pill">12¥</span>
-          </li>
-          <li class="list-group-item justify-content-around">
-            Juices
-            <span class="badge badge-default badge-pill">20¥</span>
-          </li>
-        </ul>
-      </div>
-    </div>
 
-    <!-- sliding photography -->
-  </section>
-  <section>
-    <div class="row">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <h1> Photos </h1>
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-          <li data-target="#myCarousel" data-slide-to="5"></li>
-          <li data-target="#myCarousel" data-slide-to="6"></li>
-          <li data-target="#myCarousel" data-slide-to="7"></li>
-          <li data-target="#myCarousel" data-slide-to="8"></li>
-        </ol>
-
-        <div class="carousel-inner">
-
-          <div class="item active">
-            <img src="img/pizza-2973125_1920.jpg" alt="Mushroom Pizza">
-            <div class="carousel-caption">
-              <h3>Mushroom Pizza</h3>
-              <p>You always can add extra.</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="img/penne-2805993_1920.jpg" alt="Penne Arrabiata">
-            <div class="carousel-caption">
-              <h3>Penne Arrabiata</h3>
-              <p>Do you love your pasta spicy?</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="img/pizza-2973231_1920.jpg" alt="Meat Lover Pizza">
-            <div class="carousel-caption">
-              <h3>Meat Lover Pizza</h3>
-              <p>3 kinds of meat</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="img/pasta-2803495_1920.jpg" alt="Spaghetti Bologniese">
-            <div class="carousel-caption">
-              <h3>Spaghetti Bologniese</h3>
-              <p>The real taste of Bologna, Italy</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="img/pasta-2819852_1920.jpg" alt="Tagliatelle al Pesto">
-            <div class="carousel-caption">
-              <h3>Tagliatelle al Pesto</h3>
-              <p>Fancy some vegetarian pasta?</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="img/pasta-2973003_1920.jpg" alt="Mushroom Carbonara">
-            <div class="carousel-caption">
-              <h3>Mushroom Carbonara</h3>
-              <p>Not classics, but you will love it.</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/pizza1.jpeg" alt="Homemade Pizza">
-            <div class="carousel-caption">
-              <h3>Homemade Pizza</h3>
-              <p>We learned it from Italian chef.</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="img/pasta-2819852_1920.jpg" alt="Tagliatelle al Pesto">
-            <div class="carousel-caption">
-              <h3>Tagliatelle al Pesto</h3>
-              <p>Fancy some vegetarian pasta?</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <img src="img/pasta-2973003_1920.jpg" alt="Mushroom Carbonara">
-            <div class="carousel-caption">
-              <h3>Mushroom Carbonara</h3>
-              <p>Not classics, but you will love it.</p>
-            </div>
-          </div>
-
-        </div>
-        <!-- Pagination -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      </div>
-    </div>
-  </section>
-  <!-- here starts the map and address -->
-  <section id="restaurants" class="restos">
-    <div class="info row">
-      <h1>Restaurants</h1>
-      <div class="map col-12 col-md-6">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3479.3460270993974!2d120.06938301509783!3d29.30152388215863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x344953de862ed169%3A0xab48d9479f29ccc4!2sDivino+Bar+%26+Restaurant!5e0!3m2!1sen!2sbe!4v1512980623183"
-          title="Map" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="address col-12 col-md-6">
-        <h4>Find us</h4>
-        <i class="list__icon icon icon--location"></i>
-        <p>Ying'enmen 6th St, Yiwu Shi, Jinhua Shi, Zhejiang Sheng, China, 322000</p>
-        <i class="list__icon icon icon--phone"></i>
-        <p>+782156325425</p>
-        <i class="list__icon icon icon--email"></i>
-        <p> <a href="mailto:divino-resto@gmail.com"> Contact us </a></p>
-
-      </div>
-    </div>
-    <div class="extra-info row">
-      <div class="hours col-12 col-md-6">
-        <h4>Working Hours&nbsp;<i class="fa fa-clock-o"></i></h4>
-        <ul class="list-unstyled opening-hours">
-          <li>Sunday <span class="pull-right">Closed</span></li>
-          <li>Monday <span class="pull-right">9:00-22:00</span></li>
-          <li>Tuesday <span class="pull-right">9:00-22:00</span></li>
-          <li>Wednesday <span class="pull-right">9:00-22:00</span></li>
-          <li>Thursday <span class="pull-right">9:00-22:00</span></li>
-          <li>Friday <span class="pull-right">9:00-23:30</span></li>
-          <li>Saturday <span class="pull-right">14:00-23:30</span></li>
-        </ul>
-      </div>
-      <div class="extras col-12 col-md-6">
-        <h4>Extra information</h4>
-        <p> <span class="glyphicons glyphicons-fees-payments"> </span> Payment: Visa - MasterCard - Wechat </p>
-        <p> <span class="glyphicons glyphicons-wifi"> </span> Free Wi-Fi</p>
-        <p> <span class="glyphicons glyphicons-plate-of-food"> </span> Lunch & Dinner</p>
-        <p> <span class="glyphicons glyphicons-camping-benches"> </span> Outdoor seating</p>
-      </div>
-    </div>
-  </section>
-  <!-- here ends the map:address:working hours -->
-
-
-  <section id="contact" class="container contact">
-    <h1>Contact us</h1>
-    <p>For any additional info or reservations, please fill up the form below.</p>
-    <form>
-      <div class="container">
-        <div class="form-group col-12 col-md-6 justify-content-md-center">
-          <label for="First Name">First Name:</label>
-          <input type="text" class="form-control" placeholder="Enter your First name">
-        </div>
-        <div class="form-group col-12 col-md-6 ">
-          <label for="Second Name">Second Name:</label>
-          <input type="text" class="form-control" placeholder="Enter your Second Name">
-        </div>
-        <div class="form-group col-12 col-md-6 ">
-          <label for="Email">Email address:</label>
-          <input type="text" class="form-control" placeholder="Enter your Email address">
-        </div>
-        <div class="form-group col-12 col-md-6 ">
-          <label for="subject" class="control-label">Subject:</label>
-          <select class="form-control" id="subject">
-              <option>Reservation</option>
-              <option>Event</option>
-            </select>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-12 col-md-6 ">
-            <label for="comment">Comment:</label>
-            <textarea class="form-control" rows="5" id="comment"></textarea>
-          </div>
-          <button type="submit" name="Send" class="btn pull-right"> <span class="glyphicon glyphicon-send"> </span> </button>
-        </div>
-      </div>
-    </form>
-  </section>
   <!-- footer starts  -->
   <footer>
     <div class="container">
@@ -387,7 +112,6 @@
       </div>
     </div>
   </footer>
-  <div id="flake" style="position: absolute; top: 4455.82px; text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 3px; left: 655.808px; opacity: 0.280257; font-size: 12.0088px; z-index: 1000000; color: rgb(255, 255, 255);">❄</div>
 </body>
 
 </html>

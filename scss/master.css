@@ -123,6 +123,10 @@ body {
   padding-top: .4em;
 }
 
+.menu {
+  background-color: rgb(221, 219, 220);
+}
+
 .menu h1 {
   text-align: center;
   font-family: 'Dancing Script', cursive;
@@ -152,6 +156,10 @@ body {
   background-color: transparent !important;
 }
 
+#myCarousel {
+  background-color: rgb(221, 219, 220);
+}
+
 #myCarousel h1 {
   color: #7a343a !important;
   text-align: center;
@@ -176,8 +184,7 @@ body {
 }
 
 .restos {
-  /*background-image: url(./img/outside.jpg);*/
-  background-color: #7a343a !important;
+  background-color: rgb(221, 219, 220);
   width: 100vw;
   height: auto;
   padding: 0 auto;
@@ -206,12 +213,6 @@ body {
   width: 200px;
 }
 
-/*.restos .extra-info.row {
-  background-color: rgba(56, 43, 45, 0.5);
-  margin: 0 100px;
-  padding-bottom: 40px;
-}*/
-
 .restos .info.row a {
   color: white;
   text-transform: uppercase;
@@ -221,6 +222,11 @@ body {
   display: block;
   margin: 0 auto;
   border: 1px solid white;
+  padding: 20px;
+}
+
+.info.row, .extra-info {
+  background-color: #7a343a !important;
 }
 
 .extra-info ul {
@@ -238,17 +244,6 @@ body {
   /*text-transform: uppercase;*/
 }
 
-/*
-.container.contact h1::after {
-  right: 100%;
-  background: linear-gradient(to right, rgb(121, 43, 57, 1) 0%, rgba(121, 43, 57, 0) 100%);
-}
-
-.container.contact h1::before {
-  left: 100%;
-  background: linear-gradient(to left, rgb(121, 43, 57, 1) 0%, rgba(121, 43, 57, 0) 100%);
-}*/
-
 .container.contact p {
   font-size: 1em;
   color: #7a343a !important;
@@ -257,14 +252,24 @@ body {
   margin: 20px;
 }
 
-.container.contact {
+#contact {
   background-color: rgb(221, 219, 220);
+  width: 100%;
 }
 
 .container.contact form .container button {
   background-color: #7a343a !important;
   padding: 2px 20px 2px 60px;
   margin: 25px 110px 25px 0;
+}
+
+.container .pages .navbar-right .pagination ul {
+  padding: 20px;
+  margin: 0 auto !important;
+}
+
+.page-item a {
+  color: #7a343a !important;
 }
 
 .form-group {
@@ -276,6 +281,7 @@ body {
 
 footer {
   background: #7a343a;
+  padding-top: 20px;
 }
 
 footer .footer-social ul {
@@ -303,6 +309,7 @@ footer .footer-social i {
 footer .footer-company p {
   margin: 20px auto;
   width: 200px;
+  text-align: center;
   font-size: 1.1em;
 }
 
